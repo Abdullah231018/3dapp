@@ -1,0 +1,98 @@
+    //adapted from example code 'benskitchen.com'
+
+function CokeScene(){
+    nSwitch = 0;
+    document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+}
+
+function SpriteScene(){
+    nSwitch = 1;
+    document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+}
+
+function DrPepperScene(){
+    nSwitch = 2;
+    document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+}
+
+var spinning = false;
+
+function spin()
+{
+  spinning = !spinning;
+  document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
+}
+
+function stopRotation()
+{
+  spinning = false;
+  document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
+}
+
+function animateModel()
+{
+    if(document.getElementById('model__RotationTimer').getAttribute('enabled')!= 'true')
+        document.getElementById('model__RotationTimer').setAttribute('enabled', 'true');
+    else
+        document.getElementById('model__RotationTimer').setAttribute('enabled', 'false');
+}
+
+function wireFrame()
+{
+  var e = document.getElementById('wire');
+  e.runtime.togglePoints(true);
+  e.runtime.togglePoints(true);
+}
+
+var lightOn = true;
+
+function headLight()
+{
+  lightOn = !lightOn;
+  document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
+  console.log(lightOn);
+}
+
+function omniLight()
+{
+  lightOn = !lightOn;
+  document.getElementById('model__omniLight').setAttribute('headlight', lightOn.toString());
+  console.log(lightOn);
+}
+
+function targetLight()
+{
+  lightOn = !lightOn;
+  document.getElementById('model__targetLight').setAttribute('headlight', lightOn.toString());
+  console.log(lightOn);
+}
+
+function cameraFront()
+{
+  document.getElementById('front').setAttribute('bind', 'true');
+}
+
+function cameraBack()
+{
+  document.getElementById('back').setAttribute('bind', 'true');
+}
+
+function cameraLeft()
+{
+  document.getElementById('left').setAttribute('bind', 'true');
+}
+
+function cameraRight()
+{
+  document.getElementById('right').setAttribute('bind', 'true');
+}
+
+function cameraTop()
+{
+  document.getElementById('top').setAttribute('bind', 'true');
+}
+
+function cameraBottom()
+{
+  document.getElementById('bottom').setAttribute('bind', 'true');
+}

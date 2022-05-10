@@ -1,0 +1,243 @@
+
+/* General */
+body, ul, li, p, a, label, input, div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px !important;
+}
+.logo { font-weight: 500 !important;}
+.text-warning {  color: #ede861 !important;}
+.text-muted { color: #bcbcbc !important;}
+.text-success { color: #F40009 !important;}
+.text-light { color: #cfd6e1 !important;}
+.bg-dark { background-color: #212934 !important;}
+.bg-light { background-color: #e9eef5 !important;}
+.bg-black { background-color: #1d242d !important;}
+.bg-success { background-color: #F40009 !important;}
+.btn-success {
+  background-color: #F40009 !important;
+  color: white !important;
+}
+.pagination .page-link:hover {color: #000;}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background-color: #69bb7e;
+  color: #fff;
+}
+
+
+x3d {
+    border-radius: 5px;
+    border: 0px solid rgba(255, 0, 0, 1.0);
+    width: 100%;
+    height: 100%    
+}
+
+/* Nav */
+#custom_nav_top { min-height: 40px;}
+#custom_nav_top * { font-size: .9em !important;}
+#custom_main_nav a { color: #212934;}
+#custom_main_nav a:hover { color: #F40009;}
+#custom_main_nav .navbar .nav-icon { margin-right: 20px;}
+
+/* Hero Carousel */
+#temp-carousel { background: #efefef !important;}
+.custom-accordion a { color: #000;}
+.custom-accordion a:hover { color: #333d4a;}
+
+/* Product */
+.product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);}
+.product-wap .product-color-dot.color-dot-red { background:#f71515;}
+.product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
+.product-wap .product-color-dot.color-dot-black { background:#000000;}
+.product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
+.product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
+.card.product-wap .card .product-overlay {
+  background: rgba(0,0,0,.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.card.product-wap a { color: #000;}
+#carousel-related-product .slick-slide:focus { outline: none !important;}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* gallery */
+.gallery-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: .5s;
+}
+.gallery-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+/* Carousel Hero */
+#temp-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: #F40009;
+}
+#temp-carousel .carousel-control-next i,
+#temp-carousel .carousel-control-prev i {
+  color: #F40009 !important;
+  font-size: 2.8em !important;
+}
+/* Carousel gallery */
+.custom-carousel .h1 {
+  font-size: .5em !important;
+  color: #000 !important;
+}
+/* Models */
+.Models-icon-wap {transition: .3s;}
+.Models-icon-wap:hover, .Models-icon-wap:hover i {color: #fff;}
+.Models-icon-wap:hover {background: #69bb7e;}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px #F40009; 
+}
+
+/*x3d buttons*/
+.btn-x3d { 
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #F40009;
+    float: left;
+    vertical-align: middle;
+    position: static;
+ }
+ .btn-x3d:hover {
+  background-color: #F40009;
+  color: white;
+ }
+
+ .model3D {
+    padding: 2px;
+    height: 200px;
+ }
+
+ .dropbtn {
+  background-color: #1E1E1E;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+The container <div> - needed to position the dropdown content 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1E1E1E;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+.model3D{
+  height: 310px;
+}
+
+@media (min-width: 576px) {
+  .tempaltemo-carousel .h1 { font-size: 1em !important;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #custom_main_nav .navbar-nav {max-width: 450px;}
+ }
+ .model3D{
+  height: 380px;
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #custom_main_nav .navbar-nav {max-width: 550px;}
+  #temp-carousel .carousel-item {min-height: 30rem !important;}
+  .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {font-size: 18px !important;}
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+  .model3D{
+    height: 450px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* Coke symbol*/
+.coke {
+  font-family: 'Coca Cola ii', sans-serif;
+  font-weight: 900;
+}
+@import url('http://fonts.cdnfonts.com/css/coca-cola-ii');
+.coke {font-family: 'Coca Cola ii', sans-serif;}
+
